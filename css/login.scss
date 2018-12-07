@@ -1,0 +1,131 @@
+@charset "UTF-8";
+body,ol,ul,h1,h2,h3,h4,h5,h6,p,th,td,dl,dd,form,fieldset,legend,input,textarea,select{margin:0;padding:0;border: 0;}
+body{font:12px "宋体","Arial Narrow",HELVETICA;background:#fff;}
+a{color:#172c45;text-decoration:none}
+em{font-style:normal}
+li{list-style:none}
+img{border:0;vertical-align:middle}
+table{border-collapse:collapse;border-spacing:0}
+p{word-wrap:break-word}
+.blue{ color: #547fd3}
+.ind{text-indent:2em}
+.ind10{text-indent:10px;}
+.noborder{border:0;}
+[id]{width: 990px;margin: 0 auto;}
+
+#head{
+    height: 60px;
+    font-size: 14px;
+    margin-top: 60px;
+    .logo{
+        cursor: pointer;
+        img,p{
+            float: left;
+            line-height: 60px;
+        }
+        img{
+            border-right: 1px solid #999999;
+            padding-right: 10px;
+        }
+        p{
+            margin-left:10px;
+        }
+    }
+    >p{
+        line-height: 60px;
+        float: right;
+        a{
+            color: darkred;
+            padding: 4px 10px;
+            margin-left: 5px;
+            &:hover{
+                color: white;
+                background: darkred;
+            }
+        }
+    }
+}
+.line{
+    width: 100%;
+    height: 1px;
+    background: #999999;
+    margin-top:300px;
+}
+#foot{
+    ul{
+        height: 40px;
+        line-height: 40px;
+        li{
+            float: left;
+            margin: 0 5px;
+            a:hover{
+                color: darkred;
+                text-decoration: underline;
+            }
+        }
+        li:nth-child(6){
+            float: right;
+            color: #999999;
+        }
+    }
+}
+#main{
+    margin-top: 50px;
+    height: 350px;
+    border: 1px solid #999999;
+    form{
+        >div{
+            float: left;
+        }
+        >div:nth-child(2){
+            text-align: center;
+            input{
+                width: 300px;
+                height: 40px;
+                border: 1px solid #999999;
+            }
+            p{
+                width: 470px;
+                margin: 0 auto;
+            }
+            p:nth-child(1){
+                margin:40px 0 30px 0;
+                a{
+                    font-size: 20px;
+                    padding: 8px 20px;
+                    border-bottom: 2px solid #999999;
+                    color: black;
+                }
+                a:nth-child(1){
+                    border-bottom: 2px solid darkred;
+                }
+            }
+            p:nth-child(2){
+                margin-bottom: 10px;
+            }
+            p:nth-child(3){
+                margin-bottom: 10px;
+            }
+            p:nth-child(4){
+                float: right;
+                margin-bottom: 10px;
+                a{
+                    margin-left: 240px;
+                    color: blue;
+                    &:hover{
+                        color: red;
+                        text-decoration: underline;
+                    }
+                }
+            }
+            P:nth-child(5){
+                input{
+                    cursor: pointer;
+                    background: darkred;
+                    color: white;
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+}
